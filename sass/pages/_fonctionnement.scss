@@ -1,0 +1,43 @@
+/*** Fonctionnement ***/
+
+.fonction {
+    background-color: $color-white;
+
+    &__cardlist {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__number-dot {
+        height: 24px;
+        width: 24px;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 50px;
+        padding: 5px;
+        background-color: $color-dots;
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        gap: 25px;
+        height: 72px;
+        width: 85%;
+        border-radius: 20px;
+        background-color: $color-bg-alt;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    & h2 {
+        padding: 50px 0 5px 20px;
+    }
+}

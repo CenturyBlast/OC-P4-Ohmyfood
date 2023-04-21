@@ -1,0 +1,33 @@
+/*** Presentation ***/
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: $color-bg-alt;
+
+    &__location {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        height: 50px;
+        width: 100%;
+        background-color: $color-bg-location;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.presentation h1 {
+    margin-top: 40px;
+}
+
+.presentation h3 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 25px;
+}
