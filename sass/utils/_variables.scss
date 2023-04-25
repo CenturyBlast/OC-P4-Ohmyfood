@@ -1,7 +1,14 @@
 $color-bg-footer: #353535;
-$color-bg-btn-faded: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+$color-bg-btn-faded: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+$color-bg-btn-faded-lighter: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
 $color-bg-location: #EAEAEA;
 $color-white: #FFFFFF;
 $color-black: #000000;
 $color-bg-alt: #F7F7F7;
 $color-dots: #9356DC;
+$color-rect-new: #99E2D0;
+$color-rect-new-text: #008766;
+
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-high: 1023.9px;
+$breakpoint-desktop: 1024px;

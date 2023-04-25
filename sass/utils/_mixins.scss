@@ -1,0 +1,56 @@
+@mixin btn {
+    display: flex;
+    border: none;
+    background: $color-bg-btn-faded;
+    color: $color-white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    &:hover {
+        background: $color-bg-btn-faded-lighter;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@mixin dish-cell {
+    border: none;
+    margin: 0 auto;
+    background: $color-white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 12px 15px;
+    width: 93%;
+}
+
+@mixin logo {
+    font-size: 30px;
+    @include desktop {
+        font-size: 34px;
+    }
+}
+
+@mixin rect-new {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    height: 29px;
+    width: 80px;
+    background: $color-rect-new;
+    color: $color-rect-new-text;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-high) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}

@@ -2,10 +2,19 @@
 
 .fonction {
     background-color: $color-white;
+    @include desktop {
+        height: 228px;
+    }
 
     &__cardlist {
         display: flex;
         flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            padding-left: 14%;
+            padding-right: 14%;
+            gap: 36.5px;
+        }
 
     }
 
@@ -19,6 +28,8 @@
         background-color: $color-dots;
         text-align: center;
         color: $color-white;
+        position: absolute;
+        left: -12px;
     }
 
     &__card {
@@ -28,17 +39,25 @@
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
         margin-top: 25px;
-        gap: 25px;
+        padding-left: 15px;
+        gap: 22px;
         height: 72px;
         width: 85%;
+        max-width: 322px;
         border-radius: 20px;
         background-color: $color-bg-alt;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        @include desktop {
+        }
     }
 
     & h2 {
         padding: 50px 0 5px 20px;
+        @include desktop {
+            padding: 52px 0 5px 13% ;
+        }
     }
 
     & h3 {
