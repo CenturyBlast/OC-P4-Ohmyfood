@@ -2,6 +2,7 @@
 
 .fonction {
     background-color: $color-white;
+
     @include desktop {
         height: 228px;
     }
@@ -9,6 +10,7 @@
     &__cardlist {
         display: flex;
         flex-direction: column;
+
         @include desktop {
             flex-direction: row;
             padding-left: 14%;
@@ -16,6 +18,12 @@
             gap: 36.5px;
         }
 
+        @include tablet {
+            flex-direction: row;
+            padding-left: 8%;
+            padding-right: 8%;
+            gap: 36.5px;
+        }
     }
 
     &__number-dot {
@@ -49,14 +57,17 @@
         border-radius: 20px;
         background-color: $color-bg-alt;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        @include desktop {
-        }
     }
 
     & h2 {
         padding: 50px 0 5px 20px;
+
         @include desktop {
-            padding: 52px 0 5px 13% ;
+            padding: 52px 0 5px 13%;
+        }
+
+        @include tablet {
+            padding: 52px 0 5px 7%;
         }
     }
 

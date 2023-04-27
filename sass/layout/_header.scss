@@ -9,6 +9,7 @@
     padding: 16.5px 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
     @include desktop {
         height: 96px;
         align-items: center;
@@ -18,5 +19,9 @@
         position: absolute;
         left: 23px;
         top: 23px;
+
+        @include desktop {
+            top: 40px;
+        }
     }
 }

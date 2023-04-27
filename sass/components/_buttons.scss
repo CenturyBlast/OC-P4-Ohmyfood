@@ -1,9 +1,10 @@
-/*** Buttons ***/ 
+/*** Buttons ***/
 
 .presentation__cta {
     @include btn;
     margin: 27px auto 57px;
     padding: 15px 20px;
+
     @include desktop {
         margin: 25px auto 30px;
     }
@@ -14,4 +15,3 @@
     margin: 40px auto;
     padding: 15px 40px;
 }
-
