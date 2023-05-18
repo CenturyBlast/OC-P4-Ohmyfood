@@ -61,6 +61,29 @@
         position: relative;
         right: 25px;
         top: 23px;
+        height: fit-content;
+
+        &--empty {
+            position: absolute;
+            color: $color-black;
+        }
+
+        &--full {
+            opacity: 0;
+            background: $color-bg-btn-faded-lighter;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all 1000ms ease-in-out;
+        }
+
+        &:hover &--full {
+            opacity: 1;
+        }
+
+        &:hover &--empty {
+            opacity: 0;
+        }
     }
 
     & h2 {

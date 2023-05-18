@@ -1,3 +1,4 @@
+@import "./utils/animations";
 @import "./utils/variables";
 @import "./utils/mixins";
 
@@ -11,6 +12,7 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/menu";
+@import "./layout/loader";
 
 @import "./pages/fonctionnement";
 @import "./pages/presentation";

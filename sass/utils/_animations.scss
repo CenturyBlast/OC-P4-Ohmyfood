@@ -1,0 +1,50 @@
+@keyframes slide {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes show {
+    95% {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}

@@ -17,6 +17,9 @@
 </head>
 
 <body class="main-container">
+    <div class="loader">
+        <p class="loader__text">ohmyfood</p>
+    </div>
     <header>
         <div class="header">
             <img class="logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo oh my food">
@@ -68,7 +71,8 @@
                                 <p>Ménilmontant</p>
                             </div>
                             <div class="restaurants__card-icon">
-                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                                <i class="fa-regular fa-heart restaurants__card-icon--empty"></i>
+                                <i class="fa-solid fa-heart restaurants__card-icon--full"></i>
                             </div>
                         </div>
                     </article>
@@ -84,7 +88,8 @@
                                 <p>Charonne</p>
                             </div>
                             <div class="restaurants__card-icon">
-                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                                <i class="fa-regular fa-heart restaurants__card-icon--empty"></i>
+                                <i class="fa-solid fa-heart restaurants__card-icon--full"></i>
                             </div>
                         </div>
                     </article>
@@ -94,15 +99,16 @@
                         <img class="restaurants__img"
                             src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                             alt="oeufs et verdure">
-                        <ul class="restaurants__card-content">
+                        <div class="restaurants__card-content">
                             <div class="restaurants__card-text">
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
                             <div class="restaurants__card-icon">
-                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                                <i class="fa-regular fa-heart restaurants__card-icon--empty"></i>
+                                <i class="fa-solid fa-heart restaurants__card-icon--full"></i>
                             </div>
-                        </ul>
+                        </div>
                     </article>
                 </a>
                 <a href="./restaurants/le-delice-des-sens.html">
@@ -116,15 +122,14 @@
                                 <p>Folie-Méricourt</p>
                             </div>
                             <div class="restaurants__card-icon">
-                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                                <i class="fa-regular fa-heart restaurants__card-icon--empty"></i>
+                                <i class="fa-solid fa-heart restaurants__card-icon--full"></i>
                             </div>
                         </div>
                     </article>
                 </a>
             </div>
-
         </section>
-
     </main>
     <footer class="footer">
         <h3 class="footer__logo">ohmyfood</h3>
@@ -139,7 +144,7 @@
             </div>
             <div class="footer__text--sub">
                 <h3>Mentions légales</h3>
-                <a href="#" class="footer__contact">
+                <a href="mailto:contact@ohmyfood.com" class="footer__contact">
                     <h3>Contact</h3>
                 </a>
             </div>

@@ -1,0 +1,19 @@
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: $color-bg-btn-faded-lighter;
+    animation: show 2500ms ease forwards;
+
+    &__text {
+        display: flex;
+        font-family: 'Shrikhand';
+        font-size: 15vmin;
+        color: $color-white;
+        animation: roll 2500ms ease;
+    }
+}
