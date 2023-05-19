@@ -34,6 +34,12 @@
         }
     }
 
+    &__link {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+    }
+
     &__card {
         display: flex;
         flex-direction: column;
@@ -58,9 +64,9 @@
 
     &__card-icon {
         @include heart;
-        position: relative;
+        position: absolute;
         right: 25px;
-        top: 23px;
+        top: 198px;
         height: fit-content;
 
         &--empty {
@@ -77,11 +83,13 @@
             transition: all 1000ms ease-in-out;
         }
 
-        &:hover &--full {
+        &:hover &--full,
+        &:focus &--full {
             opacity: 1;
         }
 
-        &:hover &--empty {
+        &:hover &--empty,
+        &:focus &--empty {
             opacity: 0;
         }
     }

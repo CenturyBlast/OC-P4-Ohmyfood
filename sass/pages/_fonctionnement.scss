@@ -10,12 +10,14 @@
     &__cardlist {
         display: flex;
         flex-direction: column;
+        padding-bottom: 68px;
 
         @include desktop {
             flex-direction: row;
             padding-left: 14%;
             padding-right: 14%;
             gap: 36.5px;
+            padding-bottom: 0;
         }
 
         @include tablet {
@@ -23,6 +25,7 @@
             padding-left: 8%;
             padding-right: 8%;
             gap: 36.5px;
+            padding-bottom: 50px;
         }
     }
 

@@ -34,7 +34,6 @@
 
 @mixin heart {
     display: flex;
-    position: relative;
     font-size: 22px;
     cursor: pointer;
 }
@@ -63,7 +62,7 @@
 }
 
 @mixin tablet {
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-high) {
+    @media (min-width: $breakpoint-tablet) {
         @content;
     }
 }

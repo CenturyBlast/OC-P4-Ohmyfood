@@ -218,7 +218,7 @@ th {
     flex-direction: row-reverse;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .footer {
     height: 114px;
     flex-direction: row-reverse;
@@ -238,7 +238,7 @@ th {
     padding: 57px 57px 0 85px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .footer__logo {
     padding: 57px 57px 0 85px;
   }
@@ -254,7 +254,7 @@ th {
     flex-direction: row;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .footer__text {
     flex-direction: row;
   }
@@ -271,7 +271,7 @@ th {
     gap: 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .footer__text--sub {
     flex-direction: row;
     padding: 63px 0 0 40px;
@@ -296,7 +296,7 @@ th {
     padding-top: 56px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .footer__icon {
     padding-top: 56px;
   }
@@ -319,7 +319,7 @@ th {
     height: 390px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__img {
     height: 320px;
   }
@@ -347,7 +347,7 @@ th {
     padding: 51px 0 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__title h1 {
     padding: 51px 0 0;
   }
@@ -366,7 +366,7 @@ th {
     margin: 40px 20% 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__texte h2 {
     margin: 40px 12.5% 0;
   }
@@ -386,7 +386,7 @@ th {
     gap: 24px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__title {
     justify-content: center;
     gap: 24px;
@@ -394,9 +394,9 @@ th {
 }
 .menu__title-icon {
   display: flex;
-  position: relative;
   font-size: 22px;
   cursor: pointer;
+  position: relative;
   margin-top: 36px;
   margin-right: 10%;
 }
@@ -424,7 +424,7 @@ th {
     margin-right: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__title-icon {
     margin-top: 54px;
     margin-right: 0;
@@ -450,7 +450,7 @@ th {
     width: 60%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .menu__dish {
     width: 75%;
   }
@@ -544,6 +544,7 @@ th {
 .fonction__cardlist {
   display: flex;
   flex-direction: column;
+  padding-bottom: 68px;
 }
 @media (min-width: 1024px) {
   .fonction__cardlist {
@@ -551,14 +552,16 @@ th {
     padding-left: 14%;
     padding-right: 14%;
     gap: 36.5px;
+    padding-bottom: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .fonction__cardlist {
     flex-direction: row;
     padding-left: 8%;
     padding-right: 8%;
     gap: 36.5px;
+    padding-bottom: 50px;
   }
 }
 .fonction__number-dot {
@@ -600,7 +603,7 @@ th {
     padding: 52px 0 5px 13%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .fonction h2 {
     padding: 52px 0 5px 7%;
   }
@@ -647,7 +650,7 @@ th {
     margin-top: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .presentation h1 {
     font-size: 32px;
   }
@@ -684,7 +687,7 @@ th {
     gap: 50px 100px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .restaurants__cardlist {
     display: grid;
     margin: 0 5%;
@@ -693,6 +696,11 @@ th {
     grid-template-rows: 1fr 1fr;
     gap: 40px 20px;
   }
+}
+.restaurants__link {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
 }
 .restaurants__card {
   display: flex;
@@ -717,12 +725,11 @@ th {
 }
 .restaurants__card-icon {
   display: flex;
-  position: relative;
   font-size: 22px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   right: 25px;
-  top: 23px;
+  top: 198px;
   height: fit-content;
 }
 .restaurants__card-icon--empty {
@@ -737,10 +744,10 @@ th {
   color: transparent;
   transition: all 1000ms ease-in-out;
 }
-.restaurants__card-icon:hover .restaurants__card-icon--full {
+.restaurants__card-icon:hover .restaurants__card-icon--full, .restaurants__card-icon:focus .restaurants__card-icon--full {
   opacity: 1;
 }
-.restaurants__card-icon:hover .restaurants__card-icon--empty {
+.restaurants__card-icon:hover .restaurants__card-icon--empty, .restaurants__card-icon:focus .restaurants__card-icon--empty {
   opacity: 0;
 }
 .restaurants h2 {
@@ -751,7 +758,7 @@ th {
     padding: 32px 0 25px 13%;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
+@media (min-width: 768px) {
   .restaurants h2 {
     padding: 32px 0 25px 7%;
   }
