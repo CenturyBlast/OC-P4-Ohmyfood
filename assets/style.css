@@ -594,6 +594,16 @@ th {
   border-radius: 20px;
   background-color: #F7F7F7;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 750ms ease-in-out;
+}
+.fonction__card:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.fonction__card:hover .fonction__card-icon {
+  color: #9356DC;
+}
+.fonction__card-icon {
+  transition: all 750ms ease-in-out;
 }
 .fonction h2 {
   padding: 50px 0 5px 20px;
